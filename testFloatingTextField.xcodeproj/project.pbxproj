@@ -13,9 +13,11 @@
 		5E45BFD71E93A27C00A19172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E45BFD51E93A27C00A19172 /* Main.storyboard */; };
 		5E45BFD91E93A27C00A19172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E45BFD81E93A27C00A19172 /* Assets.xcassets */; };
 		5E45BFDC1E93A27C00A19172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E45BFDA1E93A27C00A19172 /* LaunchScreen.storyboard */; };
+		6B859750BDAE4A6B04C8A5FF /* libPods-testFloatingTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D475CC6A1AEE1F13668A396 /* libPods-testFloatingTextField.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28E18D2D64E0FB7022729E75 /* Pods-testFloatingTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFloatingTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-testFloatingTextField/Pods-testFloatingTextField.release.xcconfig"; sourceTree = "<group>"; };
 		5E45BFC91E93A27C00A19172 /* testFloatingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFloatingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E45BFCD1E93A27C00A19172 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E45BFCF1E93A27C00A19172 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		5E45BFD81E93A27C00A19172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E45BFDB1E93A27C00A19172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E45BFDD1E93A27C00A19172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D475CC6A1AEE1F13668A396 /* libPods-testFloatingTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testFloatingTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CDBA2A93FC4C5B7314F308 /* Pods-testFloatingTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testFloatingTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testFloatingTextField/Pods-testFloatingTextField.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B859750BDAE4A6B04C8A5FF /* libPods-testFloatingTextField.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CFE43A82FB20AB810D0A954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5CDBA2A93FC4C5B7314F308 /* Pods-testFloatingTextField.debug.xcconfig */,
+				28E18D2D64E0FB7022729E75 /* Pods-testFloatingTextField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E45BFC01E93A27C00A19172 = {
 			isa = PBXGroup;
 			children = (
 				5E45BFCB1E93A27C00A19172 /* testFloatingTextField */,
 				5E45BFCA1E93A27C00A19172 /* Products */,
+				2CFE43A82FB20AB810D0A954 /* Pods */,
+				EB6EDED9C3B87F3A91ECCD9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB6EDED9C3B87F3A91ECCD9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D475CC6A1AEE1F13668A396 /* libPods-testFloatingTextField.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E45BFE01E93A27C00A19172 /* Build configuration list for PBXNativeTarget "testFloatingTextField" */;
 			buildPhases = (
+				27AF187CCA633AB37672D952 /* [CP] Check Pods Manifest.lock */,
 				5E45BFC51E93A27C00A19172 /* Sources */,
 				5E45BFC61E93A27C00A19172 /* Frameworks */,
 				5E45BFC71E93A27C00A19172 /* Resources */,
+				3B712A536FD8E9675D477A58 /* [CP] Embed Pods Frameworks */,
+				A313ED1CB3394DC16B953ACB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27AF187CCA633AB37672D952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B712A536FD8E9675D477A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testFloatingTextField/Pods-testFloatingTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A313ED1CB3394DC16B953ACB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testFloatingTextField/Pods-testFloatingTextField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E45BFC51E93A27C00A19172 /* Sources */ = {
@@ -271,10 +346,12 @@
 		};
 		5E45BFE11E93A27C00A19172 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5CDBA2A93FC4C5B7314F308 /* Pods-testFloatingTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8X3V795LG6;
 				INFOPLIST_FILE = testFloatingTextField/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexis.2017.testFloatingTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,10 +360,12 @@
 		};
 		5E45BFE21E93A27C00A19172 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E18D2D64E0FB7022729E75 /* Pods-testFloatingTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8X3V795LG6;
 				INFOPLIST_FILE = testFloatingTextField/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexis.2017.testFloatingTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +391,7 @@
 				5E45BFE21E93A27C00A19172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import <JVFloatLabeledTextField/JVFloatLabeledTextField.h>
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *floatingTextField;
 
 @end
 
@@ -25,5 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeSecureEntryState:(id)sender {
+    self.floatingTextField.secureTextEntry = !self.floatingTextField.secureTextEntry;
+}
 
 @end
